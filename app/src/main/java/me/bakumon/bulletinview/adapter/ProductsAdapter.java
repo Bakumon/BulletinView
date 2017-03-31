@@ -20,6 +20,10 @@ public class ProductsAdapter extends BulletinAdapter {
         super(context, list);
     }
 
+    @Override
+    public int getCount() {
+        return 2;
+    }
 
     @Override
     public View getView(int position) {

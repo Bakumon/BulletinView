@@ -27,6 +27,9 @@ public abstract class BulletinAdapter<T> {
      * @return 数据的大小
      */
     public int getCount() {
+        if (mData == null) {
+            return 0;
+        }
         return mData.size();
     }
 

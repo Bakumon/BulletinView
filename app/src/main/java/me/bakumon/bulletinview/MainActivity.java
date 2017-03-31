@@ -73,10 +73,6 @@ public class MainActivity extends AppCompatActivity {
         // 商品展示
         ///////////////////////////////
         mBulletinViewPoduct = (BulletinView) findViewById(R.id.bulletin_view_product);
-        List<Object> list1 = new ArrayList<>();
-        list1.add(null);
-        list1.add(null);
-
-        mBulletinViewPoduct.setAdapter(new ProductsAdapter(this, list1));
+        mBulletinViewPoduct.setAdapter(new ProductsAdapter(this, null));
     }
 }
