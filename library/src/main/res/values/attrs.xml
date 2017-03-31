@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BulletinView">
+        <attr name="bulletinInterval" format="integer"/>
+        <attr name="bulletinEnterAnim" format="reference"/>
+        <attr name="bulletinLeaveAnim" format="reference"/>
+    </declare-styleable>
+</resources>
