@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@android:color/white"
     android:gravity="center_horizontal"
     android:orientation="vertical"
@@ -19,7 +19,8 @@
         <me.bakumon.library.view.BulletinView
             android:id="@+id/bulletin_view"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            app:bulletinInterval="1500" />
     </LinearLayout>
 
     <LinearLayout
@@ -42,9 +43,16 @@
         <me.bakumon.library.view.BulletinView
             android:id="@+id/bulletin_view_sale"
             android:layout_width="match_parent"
-            app:bulletinInterval="2000"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            app:bulletinInterval="2000" />
     </LinearLayout>
 
+    <me.bakumon.library.view.BulletinView
+        android:id="@+id/bulletin_view_product"
+        android:layout_marginTop="20dp"
+        android:layout_width="180dp"
+        android:layout_height="120dp"
+        app:bulletinEnterAnim="@anim/product_item_enter"
+        app:bulletinLeaveAnim="@anim/product_item_leave" />
 
 </LinearLayout>

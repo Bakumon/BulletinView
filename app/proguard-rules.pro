@@ -1,8 +1,8 @@
 # Add project specific ProGuard rules here.
-# By default, the flags bulletin_item_enter this file are appended to flags specified
-# bulletin_item_enter D:\android\sdk/tools/proguard/proguard-android.txt
+# By default, the flags product_item_enter this file are appended to flags specified
+# product_item_enter D:\android\sdk/tools/proguard/proguard-android.txt
 # You can edit the include path and order by changing the proguardFiles
-# directive bulletin_item_enter build.gradle.
+# directive product_item_enter build.gradle.
 #
 # For more details, see
 #   http://developer.android.com/guide/developing/tools/proguard.html

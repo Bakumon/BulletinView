@@ -7,6 +7,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
+import me.bakumon.bulletinview.adapter.ProductsAdapter;
 import me.bakumon.bulletinview.adapter.SaleAdapter;
 import me.bakumon.bulletinview.entity.SaleEntity;
 import me.bakumon.library.adapter.SimpleBulletinAdapter;
@@ -16,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
     private BulletinView mBulletinView;
     private BulletinView mBulletinViewSale;
+    private BulletinView mBulletinViewPoduct;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,5 +68,15 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, saleEntities.get(position).saleTitle, Toast.LENGTH_SHORT).show();
             }
         });
+
+        ///////////////////////////////
+        // 商品展示
+        ///////////////////////////////
+        mBulletinViewPoduct = (BulletinView) findViewById(R.id.bulletin_view_product);
+        List<Object> list1 = new ArrayList<>();
+        list1.add(null);
+        list1.add(null);
+
+        mBulletinViewPoduct.setAdapter(new ProductsAdapter(this, list1));
     }
 }
