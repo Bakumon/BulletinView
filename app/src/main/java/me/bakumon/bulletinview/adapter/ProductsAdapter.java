@@ -25,9 +25,9 @@ public class ProductsAdapter extends BulletinAdapter {
     public View getView(int position) {
         View view;
         if (position % 2 == 0) { //
-            view = mLayoutInflater.inflate(R.layout.item_product_first, null);
+            view = getRootView(R.layout.item_product_first);
         } else {
-            view = mLayoutInflater.inflate(R.layout.item_product_second, null);
+            view = getRootView(R.layout.item_product_second);
         }
         return view;
     }

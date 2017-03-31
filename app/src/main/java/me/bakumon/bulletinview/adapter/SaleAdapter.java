@@ -25,7 +25,7 @@ public class SaleAdapter extends BulletinAdapter<SaleEntity> {
 
     @Override
     public View getView(int position) {
-        View view = mLayoutInflater.inflate(R.layout.item_sale, null);
+        View view = getRootView(R.layout.item_sale);
         ImageView imageView = (ImageView) view.findViewById(R.id.img_sale);
         TextView tVSaleTitle = (TextView) view.findViewById(R.id.tv_sale_title);
         TextView tVSalePrice = (TextView) view.findViewById(R.id.tv_sale_price);

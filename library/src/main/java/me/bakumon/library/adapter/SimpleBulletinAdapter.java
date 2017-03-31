@@ -30,7 +30,8 @@ public class SimpleBulletinAdapter extends BulletinAdapter<String> {
     @Override
     public View getView(int position) {
 
-        View view = mLayoutInflater.inflate(R.layout.simple_item, null);
+        View view = getRootView(R.layout.simple_item);
+
         ImageView imageView = (ImageView) view.findViewById(R.id.iv_image);
         TextView textView = (TextView) view.findViewById(R.id.tv_content);
 

@@ -1,6 +1,7 @@
 package me.bakumon.library.adapter;
 
 import android.content.Context;
+import android.support.annotation.LayoutRes;
 import android.view.LayoutInflater;
 import android.view.View;
 
@@ -12,7 +13,7 @@ import java.util.List;
  */
 public abstract class BulletinAdapter<T> {
 
-    protected LayoutInflater mLayoutInflater;
+    private LayoutInflater mLayoutInflater;
     protected List<T> mData;
 
     public BulletinAdapter(Context context, List<T> list) {
@@ -27,6 +28,16 @@ public abstract class BulletinAdapter<T> {
      */
     public int getCount() {
         return mData.size();
+    }
+
+    /**
+     * 获得 item 根 View
+     *
+     * @param layoutID item 布局 ID
+     * @return item 根 View
+     */
+    protected View getRootView(@LayoutRes int layoutID) {
+        return mLayoutInflater.inflate(layoutID, null);
     }
 
     /**
