@@ -5,10 +5,10 @@ import android.content.res.TypedArray;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.animation.AnimationUtils;
-import android.widget.Adapter;
 import android.widget.ViewFlipper;
 
 import me.bakumon.library.R;
+import me.bakumon.library.adapter.BulletinAdapter;
 
 /**
  * BulletinView
@@ -32,7 +32,7 @@ public class BulletinView extends ViewFlipper implements View.OnClickListener {
     public BulletinView(Context context, AttributeSet attrs) {
         super(context, attrs);
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.BulletinView);
-        mBulletinInterval = a.getInt(R.styleable.BulletinView_bulletinInterval, DEFAULT_ENTER_ANIM);
+        mBulletinInterval = a.getInt(R.styleable.BulletinView_bulletinInterval, DEFAULT_INTERVAL);
         mBulletinEnterAnim = a.getResourceId(R.styleable.BulletinView_bulletinEnterAnim, DEFAULT_ENTER_ANIM);
         mBulletinLeaveAnim = a.getResourceId(R.styleable.BulletinView_bulletinLeaveAnim, DEFAULT_LEAVE_ANIM);
         a.recycle();
@@ -47,12 +47,12 @@ public class BulletinView extends ViewFlipper implements View.OnClickListener {
         setOutAnimation(AnimationUtils.loadAnimation(getContext(), mBulletinLeaveAnim));
     }
 
-    public void setAdapter(Adapter adapter) {
+    public void setAdapter(BulletinAdapter adapter) {
         if (adapter == null) {
             return;
         }
         for (int i = 0; i < adapter.getCount(); i++) {
-            View view = adapter.getView(i, null, this);
+            View view = adapter.getView(i);
             view.setTag(i);
             addView(view);
             view.setOnClickListener(this);
@@ -86,23 +86,4 @@ public class BulletinView extends ViewFlipper implements View.OnClickListener {
         mOnBulletinItemClickListener = onBulletinItemClickListener;
     }
 
-    /**
-     * 简单的适配器，提供 View
-     */
-    public interface BulletinAdapter {
-        /**
-         * 提供数据的大小
-         *
-         * @return 数据的大小
-         */
-        int getCount();
-
-        /**
-         * 提供具体的 View
-         *
-         * @param position view 所在的索引
-         * @return 具体的 View
-         */
-        View getView(int position);
-    }
 }
