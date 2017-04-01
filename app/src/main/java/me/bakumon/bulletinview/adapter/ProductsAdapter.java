@@ -13,10 +13,10 @@ import me.bakumon.library.adapter.BulletinAdapter;
  * Created by bakumon on 17-3-31.
  */
 
-public class ProductsAdapter extends BulletinAdapter {
+public class ProductsAdapter extends BulletinAdapter<Object> {
 
 
-    public ProductsAdapter(Context context, List list) {
+    public ProductsAdapter(Context context, List<Object> list) {
         super(context, list);
     }
 
