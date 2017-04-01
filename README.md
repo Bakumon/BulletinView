@@ -104,11 +104,10 @@ mBulletinView.setOnBulletinItemClickListener(new BulletinView.OnBulletinItemClic
 
 E-mail：bakumon@aliyun.com
 
-[个人博客](https://www.bakumon.me/)
+个人博客: [https://www.bakumon.me/](https://www.bakumon.me/)
 
-[简书](http://www.jianshu.com/u/c87569a18050)
+Github: [https://github.com/Bakumon](https://github.com/Bakumon)
 
-[新浪微博](http://weibo.com/twimb)
 
 ## License
 ```
