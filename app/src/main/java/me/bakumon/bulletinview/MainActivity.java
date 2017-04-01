@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
     private BulletinView mBulletinView;
     private BulletinView mBulletinViewSale;
-    private BulletinView mBulletinViewPoduct;
+    private BulletinView mBulletinViewProduct;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
         ///////////////////////////////
         // 商品展示
         ///////////////////////////////
-        mBulletinViewPoduct = (BulletinView) findViewById(R.id.bulletin_view_product);
-        mBulletinViewPoduct.setAdapter(new ProductsAdapter(this, null));
+        mBulletinViewProduct = (BulletinView) findViewById(R.id.bulletin_view_product);
+        mBulletinViewProduct.setAdapter(new ProductsAdapter(this, null));
     }
 }
