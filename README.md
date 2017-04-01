@@ -1,4 +1,7 @@
 # BulletinView
+
+[ ![Download](https://api.bintray.com/packages/bakumon/maven/bulletinview/images/download.svg) ](https://bintray.com/bakumon/maven/bulletinview/_latestVersion)
+
 :camel: 万能的公告栏轮播 View，也可用于商品个性垂直轮播展示
 
 ## 预览图
@@ -10,7 +13,9 @@
 
 ### 下载
 
-TODO jCenter
+```
+compile 'me.bakumon:bulletinview:1.0.0'
+```
 
 ### 自定义属性
 
