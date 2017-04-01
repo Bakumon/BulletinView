@@ -1,7 +1,6 @@
 package me.bakumon.library.adapter;
 
 import android.content.Context;
-import android.support.annotation.DrawableRes;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -22,7 +21,7 @@ public class SimpleBulletinAdapter extends BulletinAdapter<String> {
         this(context, dataList, R.drawable.icon_notice);
     }
 
-    public SimpleBulletinAdapter(Context context, List<String> dataList, @DrawableRes int imageDrawableID) {
+    public SimpleBulletinAdapter(Context context, List<String> dataList, int imageDrawableID) {
         super(context, dataList);
         mImageDrawableID = imageDrawableID;
     }

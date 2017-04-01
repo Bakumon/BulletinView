@@ -1,7 +1,6 @@
 package me.bakumon.library.adapter;
 
 import android.content.Context;
-import android.support.annotation.LayoutRes;
 import android.view.LayoutInflater;
 import android.view.View;
 
@@ -39,7 +38,7 @@ public abstract class BulletinAdapter<T> {
      * @param layoutID item 布局 ID
      * @return item 根 View
      */
-    protected View getRootView(@LayoutRes int layoutID) {
+    protected View getRootView(int layoutID) {
         return mLayoutInflater.inflate(layoutID, null);
     }
 
