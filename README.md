@@ -48,6 +48,8 @@ mBulletinView.setAdapter(new SimpleBulletinAdapter(this, list));
 
 ### 复杂公告
 
+效果图的第二种样式
+
 需要创建适配器继承自 `BulletinAdapter<T>`
 
 ```java
@@ -86,3 +88,14 @@ saleEntities.add(saleEntity);
 saleEntities.add(saleEntity1);
 mBulletinViewSale.setAdapter(new SaleAdapter(this, saleEntities));
 ```
+
+### 设置点击事件监听
+
+```java
+mBulletinView.setOnBulletinItemClickListener(new BulletinView.OnBulletinItemClickListener() {
+    @Override
+    public void onBulletinItemClick(int position) {
+        Toast.makeText(MainActivity.this, "click:" + position, Toast.LENGTH_SHORT).show();
+    }
+});
+````
