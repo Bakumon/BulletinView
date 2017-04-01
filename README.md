@@ -59,17 +59,15 @@ public class SaleAdapter extends BulletinAdapter<SaleEntity> {
 
     @Override
     public View getView(int position) {
+        // 获取 item 根 view
         View view = getRootView(R.layout.item_sale);
-        ImageView imageView = (ImageView) view.findViewById(R.id.img_sale);
+        // 实例化子 View
         TextView tVSaleTitle = (TextView) view.findViewById(R.id.tv_sale_title);
-        TextView tVSalePrice = (TextView) view.findViewById(R.id.tv_sale_price);
-        TextView tVSaleTag = (TextView) view.findViewById(R.id.tv_sale_tag);
-
+        // 获取当前 bean
         SaleEntity saleEntity = mData.get(position);
-        imageView.setImageResource(R.mipmap.sale0);
+        // 设置 view 显示的值
         tVSaleTitle.setText(saleEntity.saleTitle);
-        tVSalePrice.setText(saleEntity.salePrice);
-        tVSaleTag.setText(saleEntity.saleTag);
+
         return view;
     }
 }
@@ -81,17 +79,8 @@ public class SaleAdapter extends BulletinAdapter<SaleEntity> {
 mBulletinViewSale = (BulletinView) findViewById(R.id.bulletin_view_sale)
 List<SaleEntity> saleEntities = new ArrayList<>();
 
-SaleEntity saleEntity = new SaleEntity();
-saleEntity.saleTitle = "花少爷的粥全场优惠券";
-saleEntity.salePrice = "10元";
-saleEntity.saleTag = "新人专享";
-saleEntity.saleImgRes = R.mipmap.sale0;
-
-SaleEntity saleEntity1 = new SaleEntity();
-saleEntity1.saleTitle = "豪客来全场代金券";
-saleEntity1.salePrice = "16元";
-saleEntity1.saleTag = "再减8元";
-saleEntity1.saleImgRes = R.mipmap.sale0;
+// ...
+// 省略 new 对象操作
 
 saleEntities.add(saleEntity);
 saleEntities.add(saleEntity1);
