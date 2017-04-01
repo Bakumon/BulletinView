@@ -10,7 +10,7 @@
 
 **Demo 下载体验**
 
-<img src="https://github.com/Bakumon/BulletinView/raw/master/art/QR_code.png" width=100 height=100>
+<img src="https://github.com/Bakumon/BulletinView/raw/master/art/QR_code.png" width=120 height=120>
 
 [去蒲公英下载](https://www.pgyer.com/BulletinView)
 
