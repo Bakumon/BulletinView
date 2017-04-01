@@ -99,3 +99,13 @@ mBulletinView.setOnBulletinItemClickListener(new BulletinView.OnBulletinItemClic
     }
 });
 ````
+
+## 关于我
+
+E-mail：bakumon@aliyun.com
+
+[个人博客](https://www.bakumon.me/)
+
+[简书](http://www.jianshu.com/u/c87569a18050)
+
+[新浪微博](http://weibo.com/twimb)
