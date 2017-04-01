@@ -8,6 +8,11 @@
 
 ![BulletinView.gif](https://github.com/Bakumon/BulletinView/raw/master/art/BulletinView.gif)
 
+**Demo 下载体验**
+
+![BulletinView.gif](https://github.com/Bakumon/BulletinView/raw/master/art/QR_code.png)
+
+[去蒲公英下载](https://www.pgyer.com/BulletinView)
 
 ## 使用
 
