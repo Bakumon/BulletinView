@@ -22,8 +22,8 @@ compile 'me.bakumon:bulletinview:1.0.0'
 |属性|描述|类型|
 |---|---|---|
 |bulletinInterval|轮播间隔时间|毫秒，默认 3000|
-|bulletinEnterAnim|公告进入动画|毫秒，默认渐入平移|
-|bulletinLeaveAnim|公告离开动画|毫秒，默认渐出平移|
+|bulletinEnterAnim|公告进入动画|动画资源 ID，默认渐入平移|
+|bulletinLeaveAnim|公告离开动画|动画资源 ID，默认渐出平移|
 
 ### XML
 
